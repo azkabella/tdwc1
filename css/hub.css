@@ -1,0 +1,143 @@
+body {
+  background-color: #291803;
+  color: #fff;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Marcellus SC', fantasy;
+  text-align: center;
+  color: #ffc63a;
+  color: rgba(255, 198, 58, 0.5);
+  position:relative;
+  z-index: 4;
+}
+.top-title {
+  padding-top: 5%;
+  font-size: 4.5rem;
+}
+.container-fluid {
+  position:relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 1000px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.row {
+  position: absolute;
+  z-index: 2
+}
+.col-sm-4 {
+  padding-top: 5%;
+}
+/* Image Hovers */
+.top-left {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.top-left:hover {
+  opacity: 1.0;
+  transform: translate(-15px, -15px);
+}
+
+.top-center {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.top-center:hover {
+  opacity: 1.0;
+  transform: translate(0, -15px);
+}
+
+.top-right {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.top-right:hover {
+  opacity: 1.0;
+  transform: translate(15px, -15px);
+}
+
+.center-left {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.center-left:hover {
+  opacity: 1.0;
+  transform: translate(-25px, 0);
+}
+
+.center-center {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.center-center:hover {
+  opacity: 1.0;
+  transform: scale(1.01);
+}
+
+.center-right {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.center-right:hover {
+  opacity: 1.0;
+  transform: translate(25px, 0);
+}
+
+.bottom-left {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.bottom-left:hover {
+  opacity: 1.0;
+  transform: translate(-15px, 15px);
+}
+.bottom-center {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.bottom-center:hover {
+  opacity: 1.0;
+  transform: translate(0, 15px);
+}
+
+.bottom-right {
+  max-width: 99%;
+  opacity: 0.8;
+  transition: transform .2s;
+}
+.bottom-right:hover {
+  opacity: 1.0;
+  transform: translate(15px, 15px);
+}
+/* Spinning Image */
+.img-spin {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  transform-origin:50% 50%;
+  animation:50s rotateRight infinite linear;
+  margin-top:-150px;
+}
+
+@keyframes rotateRight{
+  100%{ transform:rotate(360deg); }
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 600px) {
+  .top-title {
+    font-size: 2rem;
+  }
+  .img-spin {
+    opacity: 0.0;
+  }
+}

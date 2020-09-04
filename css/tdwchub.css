@@ -1,0 +1,97 @@
+body {
+  background-color: #081701;
+  background-image: url('images/grungebg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  color: #fff;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Marcellus SC', fantasy;
+  text-align: center;
+  color: #ffc63a;
+  color: rgba(255, 198, 58, 0.5);
+  position:relative;
+  z-index: 4;
+}
+hr {
+  border-top: 10px dotted #ffc63a;
+  border-top: 10px dotted rgba(255, 198, 58, 0.2);
+  width:20%;
+}
+
+.top-sun {
+  opacity: 0.2;
+  max-width: 100%;
+}
+.bottom-sun {
+  transform: rotate(180deg);
+  opacity: 0.2;
+  max-width: 100%;
+}
+.top-title {
+  padding: 10px 0;
+  font-size: 4.5rem;
+}
+.container-fluid {
+  text-align: center;
+  margin-top: -25px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.col-lg-12 {
+  padding: 0;
+}
+.col-sm-2 {
+  padding-top: 5%;
+}
+
+/* Animation */
+.rotate {
+  opacity: 0.5;
+  animation: rotation 20s infinite linear;
+  position: absolute;
+  z-index: -2;
+  margin: 0;
+}
+
+.centerbg {
+  text-align:center;
+}
+
+/* Image Hovers */
+.hoverboi {
+  opacity: 0.6;
+  max-width: 100%;
+  transition: transform .2s, opacity .2s, translateZ .2s;
+  -moz-box-shadow: 0 0 15px #000;
+  -webkit-box-shadow: 0 0 15px #000;
+  box-shadow: 0 0 15px #000;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  border-radius:100%;
+}
+.hoverboi:hover {
+  opacity: 1.5;
+  transform: scale(1.25) translateZ(0);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 600px) {
+  .top-title {
+    font-size: 2.5rem;
+  }
+  .img-spin {
+    opacity: 0.0;
+  }
+}
